@@ -92,10 +92,10 @@ Advantages are obvious, the using generics method is concise and clear and stati
 	        List<String> list = new ArrayList<>();
 	        list.add("test");
 	
-	        //普通转换
+	        //common Generic
 	        ArrayList<String> result1 = (ArrayList<String>) list;
 	
-	        //静态泛型转换
+	        //Static Generic
 	        String result2 = convert(list);
 	    }
 	
