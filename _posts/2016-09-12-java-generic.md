@@ -12,10 +12,10 @@ Generics are a facility of generic programming that were added to the Java progr
 
     List<String> list = new ArrayList<String>();
     
-#The Use of Generic Methods
+## The Use of Generic Methods
 Generics methods can be used not only in collection, but also in definition of classe, interface and method. However, the use of the generic method of the scene is not too much. The following code shows the implementation of the maximum number of two numbers.
 
-###Generics Class (interface)
+### Generics Class (interface)
 
     package me.royren.test;
 
@@ -37,7 +37,7 @@ Generics methods can be used not only in collection, but also in definition of c
     	}
     }
     
-###Generics Method
+### Generics Method
 
 	/**
 	 * generic test
@@ -56,7 +56,7 @@ Generics methods can be used not only in collection, but also in definition of c
 	    }
 	}
 	
-###Static Generics Method
+### Static Generics Method
 
 	/**
 	 * generic test
@@ -75,7 +75,7 @@ Generics methods can be used not only in collection, but also in definition of c
 	}
 
 
-##The Advantages And Disadvantages of Generics Methods
+## The Advantages And Disadvantages of Generics Methods
 
 Advantages are obvious, the using generics method is concise and clear and static generics method is much more clear. However, things have two sides, the static generic method also has the corresponding shortcomings, look at some code:
 
@@ -106,7 +106,7 @@ Advantages are obvious, the using generics method is concise and clear and stati
 	
 We found that **compile succeeds, run fails**. Why this happend? his is because Java generic methods are pseudo-generics, and will be **type-erased** at compile time. The type in generic methods have already been confirmed when the corresponding class is constructed, whereas the type can not be directly speculated in the static generic method. As the lack of a clear type, finally it causes a type conversion exception.
 
-##Exploring The Mechanism
+## Exploring The Mechanism
 
 Decompile the code above:
 
@@ -167,7 +167,7 @@ After decompiling the code above:
 We found that the type of parameter is Object, but return value is List
  	
 
-##In summary
+## In summary
 
 While “generics” in Java is pseudo-generics, generics can make the code more concise, with special attention to type conversions when using generics methods and static generics methods. 	
  	
