@@ -12,7 +12,7 @@ Generics are a facility of generic programming that were added to the Java progr
 
     List<String> list = new ArrayList<String>();
     
-##The Use of Generic Methods
+#The Use of Generic Methods
 Generics methods can be used not only in collection, but also in definition of classe, interface and method. However, the use of the generic method of the scene is not too much. The following code shows the implementation of the maximum number of two numbers.
 
 ###Generics Class (interface)
