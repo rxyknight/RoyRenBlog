@@ -1,0 +1,89 @@
+######################Global Info#########################
+# Site settings
+title: Developer Roy
+header-img: img/home-bg.jpg
+email: renxiangyu16@hotmail.com
+url: "http://developerroy.com"
+description: "I am Roy, I am a developer"
+github_username:  rxyknight
+facebook_username: roy.ren.961
+#quora_username: Roy-Ren-3
+linkedin_username: roy-ren-749204120
+disqus_id: http-developerroy-com
+
+##########################Global Info End#############################
+
+# Where things are
+source:       .
+destination:  ./_site
+plugins_dir:  ./_plugins
+layouts_dir:  ./_layouts
+data_dir:     ./_data
+includes_dir: ./_includes
+posts_dir: ./_posts
+#collections:  null
+
+# Handling Reading
+safe:         false
+include:      [".htaccess"]
+exclude:      ["less","node_modules","Gruntfile.js","package.json","README.md","tmp","unless"]
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Filtering Content
+show_drafts: null
+limit_posts: 0
+future:      false
+unpublished: false
+
+# Plugins
+whitelist: []
+gems:      ["jekyll-paginate"]
+#gems:      []
+
+# Conversion
+markdown:    kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Serving
+detach:  false
+port:    4000
+host:    127.0.0.1
+baseurl: "" # does not include hostname
+
+# Outputting
+permalink: pretty
+paginate: 16
+paginate_path: /page/:num
+timezone: Australia/Sydney
+
+quiet:    false
+defaults: []
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  input: GFM
+
+  coderay:
+    coderay_wrap:              div
+    coderay_line_numbers:      inline
+    coderay_line_number_start: 1
+    coderay_tab_width:         4
+    coderay_bold_every:        10
+    coderay_css:               style
