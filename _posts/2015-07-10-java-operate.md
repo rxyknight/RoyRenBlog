@@ -51,8 +51,8 @@ Please pay attention to the following code:
 	 
 It shows that **type cast** applies to **a += c** during compiling.
 
-	In conclusion: 
-	For a += c
-	(A + = c) is equivalent to (a = a + c) if the type of a is compatible with b,
-    Otherwise, type cast applies after adding.
+In conclusion: 
+For a += c
+(A + = c) is equivalent to (a = a + c) if the type of a is compatible with b,
+Otherwise, type cast applies after adding.
 
