@@ -2,7 +2,7 @@
 layout: post
 title: 'Java generics methods'
 date: '2016-09-12'
-header-img: "img/home-bg.jpg"
+header-img: "img/post-bg-java.jpg"
 tags:
      - java
 author: 'Roy Ren'
