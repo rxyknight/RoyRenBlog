@@ -46,6 +46,7 @@ We suppose that the server logs are from Apache server, and the log name and con
 		awk 'BEGIN{pv=0}{pv++}END{print "PV:"pv}' clean_2013_05_30.log
 		# OR
 		awk 'END{print "PV:"NR}' clean_2013_05_30.log
+		
 	UV:
 	
 		# sort and then remove duplication
