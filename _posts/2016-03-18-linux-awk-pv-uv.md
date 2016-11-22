@@ -20,10 +20,14 @@ By analysing the server logs, we can get PV & UV easily. Many programming langua
 
 ## Let's start.
 
-We suppose that the server logs are from Apache server, and the log name and content looks like:
+We suppose that the server logs are from Apache server,
 
-**access_2013_05_30.log**
-	
+Log name: **access_2013_05_30.log**
+
+
+Log content (only part): 	
+
+
 	114.66.5.211 - - [30/May/2013:22:30:04 +0800] "GET /static/image/common/locked.gif HTTP/1.1" 200 319
 	58.63.138.37 - - [30/May/2013:22:30:04 +0800] "GET /static/js/fileprogress.js?y7a HTTP/1.1" 304 -
 	115.61.42.205 - - [30/May/2013:22:30:03 +0800] "GET /api/connect/like.php HTTP/1.1" 200 722
