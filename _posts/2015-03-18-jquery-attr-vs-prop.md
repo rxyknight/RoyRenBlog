@@ -48,8 +48,23 @@ Look at the code below:
 	        });
 	    });
 	</script>
+	
 Result:
 
 <iframe src="{{ site.baseurl }}/example/jquery/radio_operate_0" width="100%" height="80px" frameborder="0" scrolling="no"> </iframe>
 
+It's so werid, because only first clicking left or right button works, and click again, thing seems goes wrong.
 
+## Why this happen?
+
+Let's have a look at the explanation from [Jquery official website](http://api.jquery.com/prop/)
+
+>The difference between attributes and properties can be important in specific situations. Before jQuery 1.6, the .attr() method sometimes took property values into account when retrieving some attributes, which could cause inconsistent behavior. As of jQuery 1.6, the .prop() method provides a way to explicitly retrieve property values, while .attr() retrieves attributes.
+
+
+>For example, selectedIndex, tagName, nodeName, nodeType, ownerDocument, defaultChecked, and defaultSelected should be retrieved and set with the .prop() method. Prior to jQuery 1.6, these properties were retrievable with the .attr() method, but this was not within the scope of attr. These do not have corresponding attributes and are only properties.
+
+
+As a result, after Jquery 1.6, for dealing "checked and selected", we must use **prop** method instead of attr. After we changed attr to prop, we can get the result we want.
+
+<iframe src="{{ site.baseurl }}/example/jquery/radio_operate_1" width="100%" height="80px" frameborder="0" scrolling="no"> </iframe>
