@@ -8,11 +8,11 @@ tags:
 author: 'Roy Ren'
 ---
 
-The principle is very simple: from time to time, rotate the picture, so the picture is rotating.
+The principle is very simple: from time to time, rotate the picture, so the picture looks like rotating.
 
 Result:
 
-<iframe src="{{ site.baseurl }}/example/jquery/rotate" width="100%" height="80px" frameborder="0" scrolling="no"> </iframe>
+<iframe src="{{ site.baseurl }}/example/jquery/rotate" width="100%" height="210px" frameborder="0" scrolling="no"> </iframe>
 
 
 Code:
