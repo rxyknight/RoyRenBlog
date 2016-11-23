@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        .cb-container {
+            width: 100%;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .cb-gap {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 20px;
+        }
+
+        .cb-gap2 {
+            margin-left: 20px !important;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="cb-container">
+    <input type="radio" class="cb-radio" id="r1" name="rd" value="left"/>
+    <input type="radio" class="cb-radio cb-gap2" id="r2" name="rd" value="right"/>
+    <button id="btn" type="button" class="btn btn-primary cb-gap">left</button>
+    <button id="btn2" type="button" class="btn btn-primary cb-gap">right</button>
+    <input type="text" id="result" class="cb-gap" value="xxx"/>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var radios = $(".cb-radio");
+        $("#btn").click(function () {
+            radios.eq(0).prop("checked", true);
+            radios.eq(1).prop("checked", false);
+            $("#result").val($(".cb-radio:checked").val());
+
+        });
+        $("#btn2").click(function () {
+            radios.eq(0).prop("checked", false);
+            radios.eq(1).prop("checked", true);
+            $("#result").val($(".cb-radio:checked").val());
+        });
+
+        $("#result").val($(".cb-radio:checked").val());
+    });
+</script>
+</body>
+</html>

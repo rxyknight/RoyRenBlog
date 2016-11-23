@@ -68,3 +68,19 @@ Let's have a look at the explanation from [Jquery official website](http://api.j
 As a result, after Jquery 1.6, for dealing "checked and selected", we must use **prop** method instead of attr. After we changed attr to prop, we can get the result we want.
 
 <iframe src="{{ site.baseurl }}/example/jquery/radio_operate_1" width="100%" height="80px" frameborder="0" scrolling="no"> </iframe>
+
+## Get the selected state and value
+
+	$("#r1").prop();
+	
+This will return **true or false**.
+	
+	$(".cb-radio:checked").val();
+	
+This will return **left, right or undefined**
+
+Example:
+
+<iframe src="{{ site.baseurl }}/example/jquery/radio_operate_2" width="100%" height="80px" frameborder="0" scrolling="no"> </iframe>
+
+Now, I hope you are more clear about prop() and attr().
