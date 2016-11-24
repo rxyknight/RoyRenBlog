@@ -2,7 +2,7 @@
 layout: post
 title: 'a+=b is equivalent to a=a+b ?'
 date: '2015-07-10'
-header-img: "img/home-bg.jpg"
+header-img: "img/post-bg-java.jpg"
 tags:
      - java
 author: 'Roy Ren'
