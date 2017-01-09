@@ -52,7 +52,7 @@
                 .charge(-500)
                 .start();
 
-        //边
+        //links
         var links = svg.selectAll("line")
                 .data(edges_data)
                 .enter()
@@ -60,7 +60,7 @@
                 .attr("marker-end", "url(#arrow)")
                 .style("stroke", "#ccc")
                 .style("stroke-width", edgeWidth);
-        //节点
+        //nodes
         var nodes = svg.selectAll("circle")
                 .data(nodes_data)
                 .enter()
@@ -75,7 +75,7 @@
                     }
                 })
                 .call(force.drag);
-        //标签
+        //labels
         var nodes_labels = svg.selectAll("text")
                 .data(nodes_data)
                 .enter()
@@ -88,7 +88,7 @@
                 .style("font-size", 16)
                 .text(function (d, i) {
                     if (i == 0) {
-                        return "点我";
+                        return "Click Me";
                     }
                     return "";
                 });
